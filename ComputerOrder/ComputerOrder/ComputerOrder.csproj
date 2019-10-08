@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C76959D1-042F-4066-BDED-2BAD93EDD008}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_105590033_hw1</RootNamespace>
+    <AssemblyName>105590033_hw1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Constant.cs" />
+    <Compile Include="Model\CreditCardPayment.cs" />
+    <Compile Include="CreditCardPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditCardPaymentForm.Designer.cs">
+      <DependentUpon>CreditCardPaymentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryForm.Designer.cs">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PresentationModel.cs" />
+    <Compile Include="OrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForm.Designer.cs">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.cs" />
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreditCardPaymentForm.resx">
+      <DependentUpon>CreditCardPaymentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryForm.resx">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\ADATA XPG Z1 DDR4 3000 8G.jpg" />
+    <Content Include="Resource\ADATA威剛 HD330 2TB 2.5吋行動硬碟.jpg" />
+    <Content Include="Resource\AMD Ryzen 5-3400G 3.7GHz.jpg" />
+    <Content Include="Resource\AMD Ryzen 7-2700X 3.7GHz.jpg" />
+    <Content Include="Resource\AMD Ryzen 7-3700X 3.6GHz.jpg" />
+    <Content Include="Resource\AMD Ryzen 7-3800X 3.9GHz.jpg" />
+    <Content Include="Resource\Apacer Panther DDR4 2400 8GB.jpg" />
+    <Content Include="Resource\ASUS ROG Strix GeForce® RTX 2080 SUPER™ O8G GAMING.jpg" />
+    <Content Include="Resource\CORSAIR Vengeance LPX DDR4 3000 16GB.jpg" />
+    <Content Include="Resource\delete.png" />
+    <Content Include="Resource\GeForce RTX 2080 SUPER VENTUS OC.jpg" />
+    <Content Include="Resource\GeForce RTX 2080 Ti GAMING X TRIO.jpg" />
+    <Content Include="Resource\HP S700 500G SATA-3 2.5 SSD.jpg" />
+    <Content Include="Resource\HyperX FURY DDR4-3200 16GB.jpg" />
+    <Content Include="Resource\HyperX FURY DDR4-3200 8GB.jpg" />
+    <Content Include="Resource\Infinite 9RB-679TW.jpg" />
+    <Content Include="Resource\Infinite X Plus 9SF-485TW.jpg" />
+    <Content Include="Resource\INTEL i5-9600KF.jpg" />
+    <Content Include="Resource\Intel i7-9700K.jpg" />
+    <Content Include="Resource\Intel i9-9900K.jpg" />
+    <Content Include="Resource\Intel i9-9900X.jpg" />
+    <Content Include="Resource\Kingston 16GB DDR4 2400.jpg" />
+    <Content Include="Resource\Kingston 8GB DDR4 2400.jpg" />
+    <Content Include="Resource\Kingston UV500 2.5 SATA-3 1920GB SSD.jpg" />
+    <Content Include="Resource\MEG X299 CREATION.jpg" />
+    <Content Include="Resource\MEG Z390 GODLIKE.jpg" />
+    <Content Include="Resource\MPG Z390I GAMING EDGE AC.jpg" />
+    <Content Include="Resource\PRISTIGE X570 CREATION.jpg" />
+    <Content Include="Resource\ROG Strix GeForce RTX™ 2080Ti O11G GAMING.jpg" />
+    <Content Include="Resource\RTX 2080 SEA HAWK X PCI-E.jpg" />
+    <Content Include="Resource\SanDisk SSD Plus 1TB 2.5吋SATAIII.jpg" />
+    <Content Include="Resource\Seagate Backup Plus Portable 5TB 2.5吋行動硬碟.jpg" />
+    <Content Include="Resource\Seagate【新梭魚BarraCuda 510】512GB M.2 2280 PCIE SSD.jpg" />
+    <Content Include="Resource\STRIX-RTX2080-A8G-GAMING.jpg" />
+    <Content Include="Resource\Toshiba【桌上型】4TB 3.5吋硬碟.jpg" />
+    <Content Include="Resource\Trident A 9SC-619TW.jpg" />
+    <Content Include="Resource\Trident A 9SI-620TW.jpg" />
+    <Content Include="Resource\Trident X Plus 9SF-616TW.jpg" />
+    <Content Include="Resource\VIPER STEEL DDR4 3200 16GB.jpg" />
+    <Content Include="Resource\WD [藍標] 1TB 3.5吋桌上型硬碟.jpg" />
+    <Content Include="Resource\X399 GAMING PRO CARBON AC.jpg" />
+    <Content Include="Resource\X570 AORUS XTREME.jpg" />
+    <Content Include="Resource\加號.png" />
+    <Content Include="Resource\微星 MPG Z390M GAMING EDGE AC.jpg" />
+    <Content Include="Resource\微星 Radeon RX 570 ARMOR 8G OC 顯示卡.jpg" />
+    <Content Include="Resource\箭頭1.jpg" />
+    <Content Include="Resource\箭頭2.jpg" />
+    <Content Include="Resource\華碩 9代i7八核雙碟獨顯Win10電腦.jpg" />
+    <Content Include="Resource\華碩 H-S340MF i3四核SSD效能Win10電腦.jpg" />
+    <Content Include="Resource\華碩 PRIME-X570-PRO.jpg" />
+    <Content Include="Resource\華碩 STRIX RX5700 O8G GAMING.jpg" />
+    <Content Include="Resource\華碩8代i5六核獨顯Win10電腦.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
